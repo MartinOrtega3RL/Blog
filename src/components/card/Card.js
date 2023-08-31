@@ -16,7 +16,7 @@ const Card = ({ cardImage,cardTitle,cardSubtitle,cardText}) => {
           image={cardImage}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" align="center" component="div">
+          <Typography gutterBottom variant="h5" align="center" component="div" color="common.white">
             {cardTitle}
           </Typography>
           <Typography
@@ -24,11 +24,11 @@ const Card = ({ cardImage,cardTitle,cardSubtitle,cardText}) => {
             variant="body1"
             align="center"
             component="div"
-            color="text.secondary"
+            color="common.black"
           >
             {cardSubtitle}
           </Typography>
-          <Typography variant="h6" align="justify" color="text.secondary">
+          <Typography variant="h6" align="justify" color="common.black">
             {cardText}
           </Typography>
         </CardContent>

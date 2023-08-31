@@ -1,21 +1,19 @@
 import React from "react";
-import kidsImage from "../../static/kids.jpg";
-import womenImage from "../../static/women.jpg";
-import menImage from "../../static/men.jpg";
+import menImage from "../../static/fondo.svg";
 import { Box, Stack, styled, Typography } from "@mui/material";
 
 const StyledBox = styled(Box)({
-  height: 200,
-  width: "100%",
+  height: "20rem",
+  width: "80rem",
   cursor: "pointer",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center center",
   backgroundSize: "cover",
 });
 const StyledTypography = styled(Typography)({
-  margin: "25% 50px 25% 50px",
-  background: "white",
-  opacity: "0.8",
+  margin: "13% 50px 25% 90px",
+  opacity: "0.9",
+  color:"white",
 });
 const Categories = () => {
   return (
@@ -23,21 +21,11 @@ const Categories = () => {
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 4 }}
-        mt={5}
+        mt={4}
       >
-        <StyledBox sx={{ backgroundImage: `url(${kidsImage})` }}>
-          <StyledTypography align="center" variant="h3">
-            Kids
-          </StyledTypography>
-        </StyledBox>
         <StyledBox sx={{ backgroundImage: `url(${menImage})` }}>
-          <StyledTypography align="center" variant="h3">
-            Men
-          </StyledTypography>
-        </StyledBox>
-        <StyledBox sx={{ backgroundImage: `url(${womenImage})` }}>
-          <StyledTypography align="center" variant="h3">
-            Women
+          <StyledTypography align="center" variant="h5">
+            Introduccion
           </StyledTypography>
         </StyledBox>
       </Stack>

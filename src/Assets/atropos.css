@@ -3,6 +3,10 @@
     height: 160px;
   }
 
+  html{
+background-color: grey;
+  }
+
 
 /* Media Query para pantallas con ancho máximo de 600px (responsive o móvil) */
 @media (max-width: 600px) {
